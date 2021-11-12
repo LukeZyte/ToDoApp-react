@@ -82,7 +82,7 @@ class App extends Component {
       alert("Przed wprowadzeniem nowego zadania należy podać jego nazwę")
     }
   }
-  //Test github
+  
   render() {
     return (
       <div className="App">
