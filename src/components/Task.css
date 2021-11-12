@@ -1,0 +1,50 @@
+.task-content {
+    display: flex;
+    flex-direction: row;
+    line-height: 2px;
+    text-align: left;
+    padding: 5px 15px 5px 50px;
+    justify-content: space-between;
+}
+
+.right {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.usun {
+    font-size: large;
+    color: white;
+    padding: 10px 12px 10px 12px;
+    border: 0 solid;
+    background-color: rgb(230, 230, 230);
+    border-radius: 6px;
+    transition: 0.3s
+}
+
+.zrobione {
+    margin-right: 10px;
+    font-size: large;
+    color: white;
+    padding: 10px 12px 10px 12px;
+    border: 0 solid;
+    background-color: rgb(230, 230, 230);
+    border-radius: 6px;
+    transition: 0.3s;
+
+}
+
+.usun:hover {
+    background-color: red;
+    transition: 0.3s
+}
+
+.zrobione:hover {
+    background-color: green;
+    transition: 0.3s
+}
+
+hr {
+    border: 1px solid rgb(230, 230, 230);
+    width: 95%;
+}

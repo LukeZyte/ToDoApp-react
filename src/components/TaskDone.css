@@ -1,0 +1,13 @@
+.task-contentDone {
+    display: flex;
+    flex-direction: row;
+    line-height: 2px;
+    text-align: left;
+    padding: 2px 15px 2px 50px;
+    justify-content: space-between;
+}
+
+.rightDone {
+    margin-top: auto;
+    margin-bottom: auto;
+}
