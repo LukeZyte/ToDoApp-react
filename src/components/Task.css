@@ -36,12 +36,14 @@
 
 .usun:hover {
     background-color: red;
-    transition: 0.3s
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .zrobione:hover {
     background-color: green;
-    transition: 0.3s
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 hr {

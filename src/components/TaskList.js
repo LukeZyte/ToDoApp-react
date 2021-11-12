@@ -33,7 +33,7 @@ const TaskList = (props) => {
         <div className="content-column">
             <h2>Zadania do wykonania</h2>
             <div>
-                {activeTasks}
+                {activeTasks.length === 0 ? "Brak zadań do wykonania" : activeTasks}
                 <hr/>
             </div>
             <h2>Historia wykonanych zadań</h2>

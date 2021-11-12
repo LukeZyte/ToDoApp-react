@@ -54,13 +54,50 @@ class App extends Component {
     })
   }
 
+  handleInput = (e) => {
+    this.setState({
+      newTaskText: e.target.value
+    })
+  }
+
+  handleClickDodaj = () => {
+
+    if(this.state.newTaskText) {
+      const tasks = Array.from(this.state.tasks)
+      const newIndex = tasks.length
+      tasks.push({
+        id: newIndex,
+        text: this.state.newTaskText,
+        date: "today",
+        active: true,
+        finishDate: null,
+      });
+
+      this.setState({
+        tasks: tasks,
+        newTaskText: ""
+      })
+    }
+    else {
+      alert("Przed wprowadzeniem nowego zadania należy podać jego nazwę")
+    }
+  }
+
   render() {
     return (
       <div className="App">
         <h1>Lista obowiązków</h1>
-        <AddTask/>
+        <AddTask 
+          newTaskText={this.state.newTaskText} 
+          onChange={this.handleInput} 
+          onClick={this.handleClickDodaj}
+        />
         <br/>
-        <TaskList tasks={this.state.tasks} delete={this.deleteTask} change={this.changeTaskStatus}/>
+        <TaskList 
+          tasks={this.state.tasks} 
+          delete={this.deleteTask} 
+          change={this.changeTaskStatus}
+        />
       </div>
     );
   }
